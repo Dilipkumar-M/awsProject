@@ -1,0 +1,9 @@
+Please note the following:
+
+Replace "my-s3-bucket-name.s3.amazonaws.com" with the actual domain name of your S3 bucket that you want to use as the origin for CloudFront.
+In the "Origins" section, you might need to configure the "OriginAccessIdentity" if you want to restrict access to the S3 bucket.
+The "DefaultCacheBehavior" section defines caching behavior. You can adjust cache settings based on your requirements.
+The "ViewerCertificate" section uses the default CloudFront certificate. You can customize this to use your own SSL certificate if needed.
+"DefaultRootObject" specifies the default object to serve when the root URL is requested.
+"PriceClass" determines the geographic location of the CloudFront edge servers. Adjust as needed.
+Remember that this is a basic template and might need further customization based on your specific use case and requirements.
